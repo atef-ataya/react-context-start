@@ -1,23 +1,22 @@
-import logo from './logo.svg';
+import React, { useState } from 'react';
+import Header from './Header';
+import Content from './Content';
+import Main from './Main';
 import './App.css';
 
 function App() {
+  const [theme, setTheme] = useState('light');
+
+  const toggleTheme = () => {
+    setTheme(theme === 'light' ? 'dark' : 'light');
+    console.log(theme);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={`app ${theme}`}>
+      <Header toggleTheme={toggleTheme} />
+      <Main theme={theme} />
+      <Content theme={theme} />
     </div>
   );
 }
