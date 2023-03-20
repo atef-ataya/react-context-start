@@ -1,10 +1,10 @@
 import React from 'react';
-import './Content.css';
+import './theme.css';
 import Message from './Message';
 
 function Content(props) {
   return (
-    <div className={`content ${props.theme}`}>
+    <div className={`theme-${props.theme}`}>
       <h1>Content</h1>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec

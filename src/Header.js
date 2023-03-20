@@ -1,5 +1,5 @@
 import React from 'react';
-import './Header.css';
+import './theme.css';
 
 function Header(props) {
   const { toggleTheme } = props;

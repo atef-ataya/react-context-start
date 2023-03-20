@@ -1,9 +1,9 @@
 import React from 'react';
-import './Main.css';
+import './theme.css';
 
 function Main(props) {
   return (
-    <div className={`content ${props.theme}`}>
+    <div className={`theme-${props.theme}`}>
       <h1>Main</h1>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec

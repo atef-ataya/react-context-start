@@ -1,10 +1,9 @@
 .app {
-  background-color: #fff;
-  color: #000;
-  transition: background-color 0.5s ease-out;
+  background-color: whitesmoke;
+  color: #333;
 }
 
 .app.dark {
-  background-color: #808080;
-  color: #fff;
+  background-color: #333;
+  color: whitesmoke;
 }
